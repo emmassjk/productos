@@ -1,11 +1,12 @@
 package com.productos.dto;
 
+import org.springframework.hateoas.RepresentationModel;
 import lombok.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductosDTO {
+public class ProductosDTO extends RepresentationModel<ProductosDTO> {
     private Integer id;
     private String nombre;
     private String descripcion;
